@@ -1,0 +1,1 @@
+The hint from Rares on Teams suggested the actual file contents were irrelevant, so inspecting auxiliary metadata was the key. So I tried using ls -la, lsattr, stat and I didn't get any useful information. Finally i tried, getfattr and saw am extended attribute user.flag to each file, by concatenating the letter of each file in the correct order I got the flag.
